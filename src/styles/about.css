@@ -93,11 +93,11 @@
     width: 460px;
   }
 }
-@media(max-width:701px) {
+/* @media(max-width:701px) {
     .about__wrapper {
         margin-top: 292px;
     }
-}
+} */
 @media (max-width: 530px) {
   .man_img {
     display: flex;

@@ -39,7 +39,7 @@
   border: none;
 }
 .homeHero__link a:nth-of-type(1):hover {
-  padding: 15.9px 16px;
+  padding: 16px 16px;
   background: #203a4c;
   border: none;
 }
@@ -106,6 +106,9 @@
     }
 }
 @media(max-width: 700px) {
+  .homeHero {
+    margin-bottom: 300px;
+  }
     .homeHero__content {
         position: relative  ;
     }
