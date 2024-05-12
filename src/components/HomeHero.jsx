@@ -3,9 +3,13 @@ import "../styles/homeHero.css"
 import down from "../images/down.svg"
 import bg from "../images/home_bg.jpg"
 import responsive_bg from "../images/responsive_home_bg.png"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 function HomeHero() {
-
+    let navigation = useNavigate()
+    function Navigation() {
+        let path = "/about"
+        navigation(path)
+    }
   return (
     <section className='homeHero'>
         <div className="container">
@@ -15,8 +19,8 @@ function HomeHero() {
                 <div className="homeHero__content">
                     <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h2>
                     <div className="homeHero__link">
-                        <NavLink><img src={down} alt=""/></NavLink>
-                        <NavLink>About Me</NavLink>
+                        <NavLink onClick={Navigation}><img src={down} alt=""/></NavLink>
+                        <NavLink onClick={Navigation}>About Me</NavLink>
                     </div>
                 </div>
             </div>
